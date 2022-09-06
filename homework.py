@@ -99,9 +99,9 @@ class SportsWalking(Training):
         """Получить количество затраченных калорий при спортивной ходьбе."""
 
         return ((self.SP_WLK_CC_1 * self.weight
-                 + (self.get_mean_speed()**self.SP_WLK_CC_2
-                 // self.height) * self.SP_WLK_CC_3
-                 * self.height) * self.duration * self.MIN_IN_H
+                + (self.get_mean_speed()**self.SP_WLK_CC_2 // self.height)
+                * self.SP_WLK_CC_3 * self.height)
+                * self.duration * self.MIN_IN_H
                 )
 
 
